@@ -1,0 +1,119 @@
+<title>PrimeNG y PrimeFlex</title>
+  <link rel="stylesheet" href="https://unpkg.com/primeng/resources/themes/lara-light-blue/theme.css">
+  <link rel="stylesheet" href="https://unpkg.com/primeng/resources/primeng.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/primeflex/primeflex.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    header {
+      background-color: #007afd;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .content {
+      padding: 20px;
+    }
+
+    .grid {
+      margin-top: 20px;
+    }
+
+    .box {
+      background-color: #007afd;
+      color: white;
+      text-align: center;
+      border-radius: 8px;
+      padding: 20px;
+      font-weight: bold;
+      height: 150px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-image: url('https://img.freepik.com/foto-gratis/fondo-papel-tapiz-colorido-borroso-artistico_58702-8667.jpg?semt=ais_hybrid');
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      margin-top: 20px;
+    }
+  </style>
+<body>
+  <header>
+    <h1>PrimeNG y PrimeFlex</h1>
+  </header>
+  <div class="content">
+    <p>
+      <strong>PrimeNG</strong> es una biblioteca de componentes de interfaz de usuario desarrollada para Angular. 
+      Ofrece una extensa gama de elementos de alta calidad, que incluyen tablas interactivas, botones personalizables, 
+      menús desplegables y formularios avanzados. Estos componentes son altamente configurables y diseñados para 
+      integrarse perfectamente con las aplicaciones modernas. Además, PrimeNG cuenta con soporte técnico, actualizaciones 
+      constantes y temas visuales prediseñados que permiten a los desarrolladores concentrarse en la lógica del negocio 
+      mientras construyen interfaces de usuario atractivas y funcionales.
+    </p>
+    <p>
+      <strong>PrimeFlex</strong>, por otro lado, es un conjunto de utilidades CSS que facilita la creación de diseños responsivos 
+      y consistentes. Proporciona clases para gestionar el espaciado, la alineación, las proporciones de las columnas y el manejo 
+      de estructuras flexbox. Este marco es ideal para quienes buscan construir interfaces adaptables, ya que asegura que el 
+      contenido se vea bien en dispositivos de diferentes tamaños y resoluciones. PrimeFlex simplifica el uso de CSS moderno al 
+      eliminar la necesidad de escribir largas reglas de estilo personalizadas.
+    </p>
+    <p>
+      Este trabajo combina el uso de <strong>PrimeNG</strong> y <strong>PrimeFlex</strong> para mostrar cómo aprovechar 
+      ambas herramientas en la creación de interfaces web robustas y atractivas. La integración de estos recursos 
+      asegura la eficiencia en el desarrollo de aplicaciones modernas, tanto en términos de diseño como de funcionalidad.
+    </p>
+    <p>
+      Dentro de este boton se encuentran de una manera organizada los trabajos realizados:
+    </p>
+    <button class="click-1" style="position: absolute;" routerLink="/lista-trabajos">
+      <i class="pi pi-folder"></i>
+    </button>
+    <br>
+    <br>
+    <br>
+
+    <!-- Cuadros Responsivos -->
+    <div class="grid">
+      <div class="col-12 sm:col-6 md:col-4 lg:col-3">
+        <div class="box">Cuadro 1</div>
+      </div>
+      <div class="col-12 sm:col-6 md:col-4 lg:col-3">
+        <div class="box">Cuadro 2</div>
+      </div>
+      <div class="col-12 sm:col-6 md:col-4 lg:col-3">
+        <div class="box">Cuadro 3</div>
+      </div>
+      <div class="col-12 sm:col-6 md:col-4 lg:col-3">
+        <div class="box">Cuadro 4</div>
+      </div>
+      <div class="col-12 sm:col-6 md:col-4 lg:col-3">
+        <div class="box">Cuadro 5</div>
+      </div>
+      <div class="col-12 sm:col-6 md:col-4 lg:col-3">
+        <div class="box">Cuadro 6</div>
+      </div>
+      <div class="col-12 sm:col-6 md:col-4 lg:col-3">
+        <div class="box">Cuadro 7</div>
+      </div>
+      <div class="col-12 sm:col-6 md:col-4 lg:col-3">
+        <div class="box">Cuadro 8</div>
+      </div>
+    </div>
+  </div>
+<br>
+<br>
+  <div class="flex justify-content-center align-items" style="height: 50px;">
+    <button class="click" routerLink="/entregable">Siguiente</button>
+  </div>
+</body>
