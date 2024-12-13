@@ -7,6 +7,8 @@ import { EntregableComponent } from './entregable/entregable.component';
 import { ListaTrabajosComponent } from './lista-trabajos/lista-trabajos.component';
 import { Entregable2Component } from './entregable-2/entregable-2.component';
 import { BotonesComponent } from './botones/botones.component';
+import { CarruselComponent } from './carrusel/carrusel.component';
+import { GaleriaComponent } from './galeria/galeria.component';
 
 const routes: Routes = [
   {
@@ -32,6 +34,14 @@ const routes: Routes = [
   {
     path: "iconos",
     component: BotonesComponent
+  },
+  {
+    path: "carrusel-imagenes",
+    component: CarruselComponent
+  },
+  {
+    path: "galeria-de-imagenes",
+    component: GaleriaComponent
   }
 ];
 

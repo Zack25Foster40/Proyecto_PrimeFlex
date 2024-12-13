@@ -14,7 +14,7 @@
     header {
       background-color: #007afd;
       color: white;
-      padding: 20px;
+      padding: 5px;
       text-align: center;
     }
 
@@ -40,13 +40,23 @@
       background-image: url('https://img.freepik.com/foto-gratis/fondo-papel-tapiz-colorido-borroso-artistico_58702-8667.jpg?semt=ais_hybrid');
     }
 
-    footer {
-      background-color: #333;
-      color: white;
-      text-align: center;
-      padding: 10px;
-      margin-top: 20px;
+    header h1 {
+    font-size: 2.5rem;
+    animation: glowEffect 3s ease-in-out infinite;
+    text-shadow: 0 0 5px #b0bec5, 0 0 10px #90a4ae, 0 0 20px #90a4ae, 
+                 0 0 30px #78909c, 0 0 40px #78909c, 0 0 50px #607d8b;
+  }
+
+  @keyframes glowEffect {
+    0%, 100% {
+      text-shadow: 0 0 5px #b0bec5, 0 0 10px #90a4ae, 0 0 20px #90a4ae, 
+                   0 0 30px #78909c, 0 0 40px #78909c, 0 0 50px #607d8b;
     }
+    50% {
+      text-shadow: 0 0 5px #cfd8dc, 0 0 10px #b0bec5, 0 0 20px #90a4ae, 
+                   0 0 30px #78909c, 0 0 40px #607d8b, 0 0 50px #546e7a;
+    }
+  }
   </style>
 <body>
   <header>
@@ -83,7 +93,6 @@
     <br>
     <br>
 
-    <!-- Cuadros Responsivos -->
     <div class="grid">
       <div class="col-12 sm:col-6 md:col-4 lg:col-3">
         <div class="box">Cuadro 1</div>
@@ -114,6 +123,8 @@
 <br>
 <br>
   <div class="flex justify-content-center align-items" style="height: 50px;">
-    <button class="click" routerLink="/entregable">Siguiente</button>
+    <button class="click" routerLink="/entregable">
+      <i class="pi pi-arrow-right"></i>
+    </button>
   </div>
 </body>

@@ -1,0 +1,47 @@
+<header class="header">
+    <h1>Galeria de Imagenes</h1>
+</header>
+
+<button class="click-2" style="position: absolute;" routerLink="">
+  <i class="pi pi-warehouse" style="position: center;"></i>
+</button>
+<button class="click-1" style="position: absolute;" routerLink="/lista-trabajos">
+    <i class="pi pi-folder" style="position: center;"></i>
+</button>
+
+<br><br><br><br>
+<div class="gallery-container">
+    <p-galleria 
+        [value]="images" 
+        [responsiveOptions]="responsiveOptions" 
+        [containerStyle]="{ 'max-width': '640px' }" 
+        [numVisible]="5">
+        <ng-template pTemplate="item" let-item>
+            <img [src]="item.itemImageSrc" class="gallery-image" />
+        </ng-template>
+        <ng-template pTemplate="thumbnail" let-item>
+            <div class="grid grid-nogutter justify-content-center thumbnail-container">
+                <img [src]="item.thumbnailImageSrc" class="thumbnail-image" />
+            </div>
+        </ng-template>
+    </p-galleria>
+</div>
+
+<br><br>
+
+<div class="p-image-container">
+    <p-image 
+        src="https://primefaces.org/cdn/primeng/images/galleria/galleria11.jpg" 
+        previewImageSrc="https://primefaces.org/cdn/primeng/images/galleria/galleria11.jpg" 
+        alt="Image" 
+        width="250" 
+        [preview]="true" />
+</div>
+
+<br><br>
+
+<div class="flex justify-content-center align-items" style="height: 50px;">
+    <button class="click" routerLink="/carrusel-imagenes">
+        <i class="pi pi-arrow-left"></i>
+    </button>
+</div>

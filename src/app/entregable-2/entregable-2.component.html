@@ -1,56 +1,43 @@
 <header class="header">
-    <h1>Entregable 2</h1>
+  <h1>Entregable 2</h1>
 </header>
-<button class="click-1" style="position: absolute;" routerLink="/lista-trabajos">
-    <i class="pi pi-folder" style="position: center;"></i>
+<button class="click-1 absolute" routerLink="/lista-trabajos">
+  <i class="pi pi-folder"></i>
 </button>
-<button class="click-2" style="position: absolute;" routerLink="">
-    <i class="pi pi-warehouse" style="position: center;"></i>
+<button class="click-2 absolute" routerLink="">
+  <i class="pi pi-warehouse"></i>
 </button>
 <br>
 <br>
 <br>
-<br>
-<div class="grid">
-    <div class="col-12 sm:col-6 md:col-4 lg:col-3 xl:col-3">
-      <div class="box">Lorem ipsum dolor sit amet</div>
-    </div>
-    <div class="col-12 sm:col-6 md:col-4 lg:col-3 xl:col-3">
-      <div class="box">Consectetur adipiscing elit</div>
-    </div>
-    <div class="col-12 sm:col-6 md:col-4 lg:col-3 xl:col-3">
-      <div class="box">Sed do eiusmod tempor</div>
-    </div>
-    <div class="col-12 sm:col-6 md:col-4 lg:col-3 xl:col-3">
-      <div class="box">Incididunt ut labore et dolore</div>
-    </div>
-    <div class="col-12 sm:col-6 md:col-4 lg:col-3 xl:col-3">
-      <div class="box">Magna aliqua ut enim ad</div>
-    </div>
-    <div class="col-12 sm:col-6 md:col-4 lg:col-3 xl:col-3">
-      <div class="box">Minim veniam quis nostrud</div>
-    </div>
-    <div class="col-12 sm:col-6 md:col-4 lg:col-3 xl:col-3">
-      <div class="box">Exercitation ullamco laboris</div>
-    </div>
-    <div class="col-12 sm:col-6 md:col-4 lg:col-3 xl:col-3">
-      <div class="box">Nisi ut aliquip ex ea commodo</div>
-    </div>
-    <div class="col-12 sm:col-6 md:col-4 lg:col-3 xl:col-3">
-      <div class="box">Consequat duis aute irure dolor</div>
-    </div>
-    <div class="col-12 sm:col-6 md:col-4 lg:col-3 xl:col-3">
-      <div class="box">In reprehenderit in voluptate</div>
-    </div>
-    <div class="col-12 sm:col-6 md:col-4 lg:col-3 xl:col-3">
-      <div class="box">Velit esse cillum dolore eu</div>
-    </div>
-    <div class="col-12 sm:col-6 md:col-4 lg:col-3 xl:col-3">
-      <div class="box">Fugiat nulla pariatur excepteur</div>
-    </div>
+<div class="grid grid-nogutter p-4 gap-0">
+  <div *ngFor="let card of [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]" class="col-12 sm:col-6 md:col-4 lg:col-3 xl:col-3 p-3">
+    <p-card [style]="{ width: '100%', overflow: 'hidden' }">
+      <ng-template pTemplate="header">
+        <img alt="Card" class="w-full" src="https://e1.pxfuel.com/desktop-wallpaper/860/21/desktop-wallpaper-dark-night-aesthetic-laptop-dark-aesthetics.jpg" />
+      </ng-template>
+      <ng-template pTemplate="title"> Card {{ card }} </ng-template>
+      <ng-template pTemplate="subtitle"> Card subtitle </ng-template>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae numquam
+        deserunt quisquam repellat libero asperiores earum nam nobis, culpa ratione quam perferendis esse, cupiditate neque
+        quas!
+      </p>
+      <ng-template pTemplate="footer">
+        <div class="flex gap-2 mt-1">
+          <p-button label="Cancel" severity="secondary" [outlined]="true" class="w-full" />
+          <p-button label="Save" class="w-full" />
+        </div>
+      </ng-template>
+    </p-card>
+  </div>
 </div>
-  
+
 <div class="flex justify-content-center align-items" style="height: 50px;">
-    <button class="click" routerLink="/entregable-1">Atras</button>
-    <button class="click" routerLink="/iconos">Siguiente</button>
+  <button class="click" routerLink="/entregable">
+    <i class="pi pi-arrow-left"></i>
+  </button>
+  <button class="click" routerLink="/iconos">
+    <i class="pi pi-arrow-right"></i>
+  </button>
 </div>
